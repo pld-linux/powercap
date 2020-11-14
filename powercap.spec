@@ -42,7 +42,10 @@ Pliki nagłówkowe biblioteki powercap.
 %build
 install -d build
 cd build
-%cmake ..
+# .pc file generation expects relative CMAKE_INSTALL_{INCLUDE,LIB}DIR
+%cmake .. \
+	-DCMAKE_INSTALL_INCLUDEDIR=include \
+	-DCMAKE_INSTALL_LIBDIR=%{_lib}
 
 %{__make}
 
