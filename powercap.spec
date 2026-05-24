@@ -2,7 +2,7 @@ Summary:	Powercap sysfs C Bindings and Utilities
 Summary(pl.UTF-8):	Wiązania C i narzędzia do interfejsu sysfs powercap
 Name:		powercap
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Applications/System
 #Source0Download: https://github.com/powercap/powercap/releases
